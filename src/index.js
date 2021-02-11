@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HomeComponent from './component/home/HomeComponent'
+import App from './App'
+import FilmComponent from './component/film/FilmComponent'
+import HomeComponent from "./component/home/HomeComponent"
+
 
 ReactDOM.render(
-  <HomeComponent />
+
+<App/>
   ,
   document.getElementById('root')
 );
