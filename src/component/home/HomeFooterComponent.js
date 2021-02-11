@@ -9,7 +9,7 @@ import ws from '../../public/assets/store/windows-store.svg'
 import fb from '../../public/assets/social/facebook-white.svg'
 import tw from '../../public/assets/social/twitter-white.svg'
 import ins from '../../public/assets/social/instagram-white.svg'
-import './HomeStyle.css'
+
 
 
 const HomeFooterComponent = () => {
@@ -38,25 +38,17 @@ const HomeFooterComponent = () => {
           <MDBCol md="6">
               
             <h5 className="title">Links</h5>
-            <ul>
-               
-                    <li className="list-unstyled">
-                    <a  href="#">
-                    <img width="50" height="50" alt="facebook" src={fb}  />
-                    </a>
-                    </li>
-                    <li className="list-unstyled">
-                        <a href="#!">
-                        <img alt="twitter" src={tw} width="50" height="50" />
-                        </a>
-                    </li>
-                    <li className="list-unstyled">
-                        <a href="#!">
-                        <img alt="instagram" src={ins} width="50" height="50" />
-                        </a>
-                    </li>
-       
-            </ul>
+            <a href="#">
+                <img alt="facebook" src={fb} width="100" height="100" />
+              </a>
+              <br/>
+              <a href="#">
+                <img alt="twitter" src={tw} width="100" height="100" />
+              </a>
+              <br/>
+              <a href="#">
+                <img alt="instagram" src={ins} width="100" height="100" />
+              </a>
             
           </MDBCol>
         </MDBRow>

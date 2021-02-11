@@ -19,6 +19,7 @@ import data from '../../public/feed/sample'
 
 
 
+
 const useStyles = makeStyles((theme) => ({
 
   heroContent: {
@@ -54,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 
 
  function FilmComponent() {
-  const classes = useStyles();
+const classes = useStyles();
  
 
   const movies  = data.entries.filter(e => e.programType ==="movie").slice(1,22);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -12,11 +12,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import SerieHeaderComponent from './SerieHeaderComponent';
 import SerieFooterComponent from './SerieFooterComponent';
 import data from '../../public/feed/sample'
-import { Ring } from 'react-awesome-spinners'
-
-
-
-
 
 
 
@@ -49,29 +44,31 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-
-
-
-
-
  function SerieComponent() {
   const classes = useStyles();
- 
 
-  const series  = data.entries.filter(e => e.programType ==="series").slice(1,22);
 
-  series.sort(function(a, b){
-    if(a.title < b.title) { return -1; }
-    if(a.title > b.title) { return 1; }
-    return 0;
-})
 
+
+   const series  = data.entries.filter(e => e.programType ==="series").slice(1,22);
+
+   series.sort(function(a, b){
+     if(a.title < b.title) { return -1; }
+     if(a.title > b.title) { return 1; }
+     return 0;
+ })
+
+  if(series=== null ){
+      return (
+          <p>error loading </p>
+      )
+  }
 
 
   return (
     
     <div>
-      <Ring></Ring>
+     
     <React.Fragment>
     
      <CssBaseline />

@@ -27,7 +27,5 @@ class SerieHeaderComponent extends Component {
  }
       
  
-
-
 }
 export default SerieHeaderComponent

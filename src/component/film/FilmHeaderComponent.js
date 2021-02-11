@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 
 class FilmHeaderComponent extends Component {
 
-
  render() {
     return (
     <div>
@@ -25,9 +24,6 @@ class FilmHeaderComponent extends Component {
     </div>
     )
  }
-      
- 
-
 
 }
 export default FilmHeaderComponent
