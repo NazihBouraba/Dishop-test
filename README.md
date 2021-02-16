@@ -44,9 +44,9 @@ j'ai utliser React Router pour la navigation .
 
 
 
-#si j'avait le temps
+#si j'avais le temps
 
--j'aurait creé un petit server (json-server) pour simuler le loading des données via un serveur
+-j'aurais creé un petit server (json-server) pour simuler le loading des données via un serveur
 -implementer redux pour la gestion des données (tableau)
 -améliorer l'interface graphique
 -rajouter proptypes
